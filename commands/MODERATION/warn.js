@@ -35,7 +35,7 @@ if(!warnchannel) return("could't find channel");
 warnchannel.send(warnEmbed);
 if(warns[wUser.id].warns == 1){    
     
-message.channel.send(`<@${wUser.id}> DON'T BREAK THE RULES OF GAMERS SUPPORTIVE COMMUNITY SERVER... THIS IS A WARNING TO YOU AFTER THIS YOU WILL BE MUTED AND IF U DID'T STOP THIS KIND OF WORK U WILL BE BANNED!`)
+message.channel.send(`<@${wUser.id}> DO NOT BREAK RULES OF SERVER... THIS IS A WARNING TO YOU AFTER THIS YOU WILL BE MUTED AND IF U DID'T STOP THIS KIND OF WORK U WILL BE BANNED!`)
     }
 
 
@@ -43,7 +43,7 @@ message.channel.send(`<@${wUser.id}> DON'T BREAK THE RULES OF GAMERS SUPPORTIVE 
 if(warns[wUser.id].warns == 2){
 let muterole = message.guild.roles.find(`name`, "muted");
 if(!muterole) return message.reply("you should create that role dude!")
-message.channel.send(`<@${wUser.id}> DON'T BREAK THE RULES OF GAMERS SUPPORTIVE COMMUNITY SERVER... THIS IS A WARNING TO YOU AFTER THIS YOU WILL BE MUTED AND IF U DID'T STOP THIS KIND OF WORK U WILL BE BANNED!`)
+message.channel.send(`<@${wUser.id}> DO NOT BREAK RULES OF SERVER... THIS IS A WARNING TO YOU AFTER THIS YOU WILL BE MUTED AND IF U DID'T STOP THIS KIND OF WORK U WILL BE BANNED!`)
 let mutetime = '1000s';
 await(wUser.addRole(muterole.id));
 message.channel.send(`<@${wUser.id}> has beed temp. muted!`)
