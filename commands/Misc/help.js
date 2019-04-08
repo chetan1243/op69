@@ -58,8 +58,8 @@ message.channel.send(commandhelp); // ye comamnd help hai main help nahi
     
 
     let GSC = new Discord.RichEmbed()
-    .setTitle("GSC COMMANDS")
-    .setDescription(`${bot.user.username} GSC Commands`) 
+    .setTitle("ZeD COMMANDS")
+    .setDescription(`${bot.user.username} ZeD Commands`) 
     .setColor("BLUE")
     bot.commands.filter(cmd => cmd.command.category === "GSC").map(cmd => GSC.addField(cmd.command.name , `**${cmd.command.description}**`));
     
